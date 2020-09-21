@@ -72,8 +72,7 @@ img {
   clear: both;
 }
 
- /* correzione media queries */
- /* blocco lezioni */
+ /* correzione media queries >420 */
  @media screen and (max-width: 420px) {
    .row {
      width: auto;
@@ -97,4 +96,35 @@ img {
      width: auto;
      margin-bottom: 40px;
    }
+ }
+
+ /* correzione media quaries tablet >768 */
+ @media screen and (max-width: 768px) {
+   #text {
+     font-size: 25px;
+   }
+   h1 {
+     font-size: 50px;
+     margin-bottom: 50px;
+   }
+   h3 {
+     font-size: 40px;
+   }
+   #steps .row>.left,
+   #steps .row>.central {
+     float: left;
+     width: 45%;
+   }
+   #steps .row>.right {
+     float: none;
+     width: auto;
+   }
+   #steps .row>.central {
+     margin-left: 40px;
+   }
+
+   /* #steps img:not(:last-child) {
+     float: left;
+     margin: 0 5px;
+   } */
  }
