@@ -71,3 +71,30 @@ img {
 .clear {
   clear: both;
 }
+
+ /* correzione media queries */
+ /* blocco lezioni */
+ @media screen and (max-width: 420px) {
+   .row {
+     width: auto;
+   }
+   .row h1 {
+     margin-bottom: 50px;
+     background-color: yellow;
+   }
+   #lezioni .row>.left,
+   #lezioni .row>.right {
+     width: auto;
+     margin-bottom: 50px;
+   }
+   .row h3 {
+     line-height: 25px;
+   }
+   #steps .row>.left,
+   #steps .row>.central,
+   #steps .row>.right {
+     float: none;
+     width: auto;
+     margin-bottom: 40px;
+   }
+ }
